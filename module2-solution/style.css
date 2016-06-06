@@ -3,43 +3,52 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding:0px;
 }
-h1 {
-  margin-bottom: 10px;
-}
-h3 {border: 2px solid black; text-align: center; }
-section {width: 130px }
-p {
+h3 {position: absolute;
+  top: 0px;
+  right: 5%;
+  border: 1px solid black; 
+  text-align: center; 
+  width: 130px;
+  height: 30px;
+  }
+  h1 {
+    text-align: center;
+    padding: 25px
+  }
+
+p
+{
+  position: relative;
   background-color: gray;
+  border: 1px solid black;
   width: 90%;
-  height: 150px;
+  height: 200px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
   font-family: Helvetica;
   color: black;
-}
-div {position: relative;
-background-color: gray;
-margin-bottom: 10px;
-margin-right:10px;
+  padding: 35px 0px 0px 15px;
+  margin-bottom: 20px;
 }
 
-/* Simple Responsive Framework. */
+div {position: relative;
+}
+
 .row {
   width: 100%;
 }
-section {position: absolute;
-  top: 0px;
-  right:0px;
 
-}
+#sushi {background-color: brown; }
+#beef {background-color: red;}
+#chiken {background-color: brown;}
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -83,7 +92,6 @@ section {position: absolute;
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
@@ -121,12 +129,20 @@ section {position: absolute;
   .col-md-12 {
     width: 100%;
   }
+  .pilnas {
+  position: relative;
+width: 95%
+}
+#sushi {
+  position: absolute;
+  top: 0px;
+  right: 2.5%;
+  }
 }
 /********** Mobile devices only **********/
 @media (max-width: 767px) {
   .col-mo-1, .col-mo-2, .col-mo-3, .col-mo-4, .col-mo-5, .col-mo-6, .col-mo-7, .col-mo-8, .col-mo-9, .col-mo-10, .col-mo-11, .col-mo-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-mo-1 {
     width: 8.33%;
